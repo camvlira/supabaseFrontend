@@ -66,7 +66,7 @@ async function addProduct(name, price) {
 
 // Function to delete a new product
 async function deleteProduct(id) {
-  const response = await fetch('http://54.91.52.211:3000/products' + id, {
+  const response = await fetch('http://54.91.52.211:3000/products/' + id, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
